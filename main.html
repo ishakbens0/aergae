@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Login Page</title>
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+.login-container {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.login-header {
+  margin-bottom: 20px;
+}
+
+.login-header h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+ 
+</style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-header">
+      <h1>Welcome back!</h1>
+    </div>
+    <form id="loginForm">
+      <input type="text" id="username" name="username" placeholder="Email or Phone" required>
+      <input type="password" id="password" name="password" placeholder="Password" required>
+      <button type="submit" onclick="login()">Login</button>
+    </form>
+    <div class="message-container">
+      <textarea id="message" placeholder="Enter your message"></textarea>
+      <button onclick="sendMessage()">Send Message</button>
+    </div>
+  </div>
+
+  <script src="W.js"></script>
+</body>
+</html>
